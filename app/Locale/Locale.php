@@ -19,7 +19,7 @@ class Locale
 
     public static function load()
     {
-        App::setLocale(static::get());
+        app()->setLocale(static::get());
     }
 
     public static function random()

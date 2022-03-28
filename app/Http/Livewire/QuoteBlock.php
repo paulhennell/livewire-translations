@@ -18,7 +18,7 @@ class QuoteBlock extends Component
     {
         return view('livewire.quote-block',[
             'quote' => Quotes::random(),
-            'lang' => Locale::random(),
+            'lang' => Locale::get(),
         ]);
     }
 }

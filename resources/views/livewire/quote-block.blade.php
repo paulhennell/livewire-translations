@@ -1,6 +1,6 @@
-<div class="mt-10">
+<div class="mt-10" wire:key="{{$lang}}">
     <div>
-        <p class="w-full text-center">{{__('titles.quote')}}</p>
+        <p class="w-full text-center">{{__('titles.quote')." ".app()->getLocale()." ".$lang}}</p>
     </div>
     <div class="relative lg:flex lg:items-center max-w-6xl">
         <div class="relative lg:ml-10">
@@ -25,6 +25,7 @@
                 <button wire:click="refresh()" class="bg-gray-200 p-3 rounded-sm">{{__('titles.refresh')}}</button>
                 </div>
             </blockquote>
+            {{$lang}}
         </div>
     </div>
 </div>
