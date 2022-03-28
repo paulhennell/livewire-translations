@@ -17,7 +17,6 @@ class DemoController extends Controller
             Locale::load();
         }
         return view('welcome', [
-                'quote' => Quotes::random(),
                 'lang' => Locale::get(),
             ]
         );

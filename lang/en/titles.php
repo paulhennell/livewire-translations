@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'main' => 'Welcome'
+    'main' => 'Welcome',
+    'refresh'=> 'More',
 ];

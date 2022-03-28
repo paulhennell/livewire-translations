@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'main' => 'Bonjour'
+    'main' => 'Bonjour',
+    'refresh' => 'suite'
 ];
