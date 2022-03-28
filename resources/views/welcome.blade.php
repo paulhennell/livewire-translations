@@ -21,8 +21,8 @@
 
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-               <h1 class="text-6xl font-thin">Hello!</h1>
-                <p class="text-gray-800 text-xl">This is some dummy text to translate</p>
+               <h1 class="text-6xl font-thin">{{__('titles.main')}}!</h1>
+                <p class="text-gray-800 text-xl">{{__('message')}}</p>
             </div>
         </div>
     </body>
