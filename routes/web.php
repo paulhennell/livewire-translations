@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    if (request()->has('lang')) {
-        App::setLocale(request()->lang);
-    }
-    return view('welcome');
-});
+Route::get('/', DemoController::class);
