@@ -2,5 +2,6 @@
 
 return [
     'main' => 'Bonjour',
-    'refresh' => 'suite'
+    'refresh' => 'suite',
+    'quote' => "citation du jour"
 ];

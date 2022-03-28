@@ -1,4 +1,7 @@
 <div class="mt-10">
+    <div>
+        <p class="w-full text-center">{{__('titles.quote')}}</p>
+    </div>
     <div class="relative lg:flex lg:items-center max-w-6xl">
         <div class="relative lg:ml-10">
             <svg class="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50" stroke="currentColor" fill="none" viewBox="0 0 144 144" aria-hidden="true">

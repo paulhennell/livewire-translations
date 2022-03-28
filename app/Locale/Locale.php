@@ -21,4 +21,9 @@ class Locale
     {
         App::setLocale(static::get());
     }
+
+    public static function random()
+    {
+        return array_rand(array_flip(['en','fr']),1);
+    }
 }
