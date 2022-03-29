@@ -1,6 +1,6 @@
-<div class="mt-10" wire:key="{{$lang}}">
+<div class="mt-10">
     <div>
-        <p class="w-full text-center">{{__('titles.quote')." ".app()->getLocale()." ".$lang}}</p>
+        <p class="w-full text-center">{{__('titles.quote')}}</p>
     </div>
     <div class="relative lg:flex lg:items-center max-w-6xl">
         <div class="relative lg:ml-10">
@@ -9,7 +9,7 @@
             </svg>
             <blockquote class="relative">
                 <div class="text-2xl leading-9 font-medium text-gray-900 font-italic">
-                    <p>{{$quote->getQuote(App::currentLocale())}}</p>
+                    <p>{{$quote->getQuote()}}</p>
                 </div>
                 <footer class="mt-8">
                     <div class="flex">
@@ -22,10 +22,9 @@
                     </div>
                 </footer>
                 <div class="flex justify-center">
-                <button wire:click="refresh()" class="bg-gray-200 p-3 rounded-sm">{{__('titles.refresh')}}</button>
+                <button wire:click="newQuote" class="bg-gray-200 p-3 rounded-sm">{{__('titles.refresh')}}</button>
                 </div>
             </blockquote>
-            {{$lang}}
         </div>
     </div>
 </div>

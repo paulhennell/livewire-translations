@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 @livewireStyles()
+<script src="//unpkg.com/alpinejs" defer></script>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -20,7 +21,7 @@
     <body class="antialiased">
         <div class="relative flex flex-col items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
 
-
+        <livewire:language-switcher />
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                <h1 class="text-6xl font-thin">{{__('titles.main')}}!</h1>
                 <p class="text-gray-800 text-xl">{{__('message')}}</p>
