@@ -9,7 +9,7 @@
             </svg>
             <blockquote class="relative">
                 <div class="text-2xl leading-9 font-medium text-gray-900 font-italic">
-                    <p>{{$quote->getQuote($lang)}}</p>
+                    <p>{{$quote->getQuote(App::currentLocale())}}</p>
                 </div>
                 <footer class="mt-8">
                     <div class="flex">

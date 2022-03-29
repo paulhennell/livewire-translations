@@ -14,6 +14,11 @@ class QuoteBlock extends Component
         $this->render();
     }
 
+    public function hydrate()
+    {
+        Locale::load();
+    }
+
     public function render()
     {
         return view('livewire.quote-block',[
